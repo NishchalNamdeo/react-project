@@ -46,12 +46,7 @@ function Card() {
           <div className="w-full px-3 py-4">
             <h2 className="text-xl font-bold">{elem.name}</h2>
             <p className="text-xs mt-3">{elem.description}</p>
-            <button
-              onClick={handleClickDownload}
-              className={`px-6 py-2 ${
-                elem.instock ? "bg-blue-500" : "bg-red-600"
-              } mt-2 rounded`}
-            >
+            <button onClick={handleClickDownload} className={`px-6 py-2 ${elem.instock ? "bg-blue-500" : "bg-red-600" } mt-2 rounded`}>
               {elem.instock ? "instock" : "out of stock"}
             </button>
           </div>
