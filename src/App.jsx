@@ -1,9 +1,14 @@
 import React from 'react';
 import Card from './components/card';
+import State from './components/State';
 
 function App() {
   return (
-    <Card/>
+    <div>
+      <Card/>
+      <State/>
+    </div>
+
   )
 }
 
