@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Music from "./components/music";
 import Navbar from "./components/Navbar";
-import From from "./components/From";
+
 
 const Cardedit = () => {
   const data = [
@@ -60,10 +60,13 @@ const Cardedit = () => {
             />
           ))}
         </div>
-        <From/>
+
+
+        
+       
         
       </div>
-    
+     
     </>
   );
 };

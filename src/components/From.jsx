@@ -1,20 +1,31 @@
-import React, { useRef } from 'react'
+import React from "react";
 
 const From = () => {
-
-    const name = useRef(null)
-    const handleSubmit = (details) => {
-        details.preventDefault();
-        console.log(name.current.value);
-    }
   return (
-    <div className='h-20 w-20  p-5' >
-        <form className='flex' onSubmit={handleSubmit} >
-            <input ref={name} type="text" placeholder='name' />
-            <input type="submit" />
-        </form>
+    <div className="mt-10 flex justify-center gap-10  ">
+      <form className="flex gap-10 ">
+        <input
+          className="rounded-md px-3 py-1 text-base font-semibold outline-none"
+          type="text"
+          placeholder="name"
+        />
+        <input
+          className="rounded-md px-3 py-1 text-base font-semibold outline-none"
+          type="text"
+          placeholder="email"
+        />
+        <input
+          className="rounded-md px-3 py-1 text-base font-semibold outline-none"
+          type="text"
+          placeholder="image url"
+        />
+        <input
+          className="px-5 bg-blue-800  rounded-md text-white font-semibold"
+          type="submit"
+        />
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default From
+export default From;
