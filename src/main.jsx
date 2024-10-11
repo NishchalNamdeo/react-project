@@ -5,10 +5,12 @@ import Cardedit from "./Cardedit.jsx";
 import "./index.css";
 import Card from "./Card.jsx";
 
+
 createRoot(document.getElementById("root")).render(
   <div>
     <App />
     <Cardedit />
-    <Card />
+    <Card/>
+  
   </div>
 );

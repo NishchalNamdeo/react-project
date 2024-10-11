@@ -1,21 +1,15 @@
-import React from "react";
-import Childcard from "./Childcard";
+import React from 'react';
+import Childcard from './Childcard'
 
-const Cards = () => {
+const Cards = ({user, handleRemove}) => {
   return (
-    <>
-      <div className="w-full max-h-96 overflow-auto  p-4 flex justify-center gap-4 flex-wrap ">
-        <Childcard />
-       
+    <div className='w-full h-96 max-h-96 overflow-auto    p-4 flex justify-center gap-4 flex-wrap'>
+      {user.map((item, index) =>{
+       return <Childcard handleRemove={handleRemove} id={index} key={index} user={item}/>
+      })}
 
-
-
-        
-
-
-      </div>
-    </>
-  );
-};
+    </div>
+  )
+}
 
 export default Cards;
