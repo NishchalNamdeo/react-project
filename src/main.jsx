@@ -18,8 +18,8 @@ createRoot(document.getElementById("root")).render(
     <div>
       <BrowserRouter>
         <Homepage />
+        <Product/>
       </BrowserRouter>
-      <Product/>
     </div>
   </>
 );
