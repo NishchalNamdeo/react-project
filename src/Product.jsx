@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Homeproduct from "./components/Homeproduct";
 import Show from "./components/Show";
 import Services from "./components/Services";
